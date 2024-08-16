@@ -1,0 +1,20 @@
+{
+  "name": "projectsetup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piyush",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http-status-codes": "^2.3.0",
+    "mysql2": "^3.11.0",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2"
+  }
+}
