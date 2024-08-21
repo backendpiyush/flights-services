@@ -26,8 +26,18 @@ async function getCities(req, res) {
     return res.status(error.statusCode).json(ErrorResponse);
   }
 }
-
+async function deleteCities(req, res) {
+  try {
+    const response = await CityService.destroyCities(req.params.id);
+    SuccessResponse.data = response;
+    return res.status(StatusCodes.OK).json(SuccessResponse);
+  } catch (error) {
+    ErrorResponse.error = error;
+    return res.status(error.statusCode).json(ErrorResponse);
+  }
+}
 module.exports = {
   createCity,
   getCities,
+  deleteCities,
 };

@@ -11,5 +11,6 @@ router.post(
 );
 
 router.get("/", cityController.getCities);
+router.delete("/:id", cityController.deleteCities);
 
 module.exports = router;
